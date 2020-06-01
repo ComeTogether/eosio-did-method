@@ -1,0 +1,7 @@
+
+.DS_Store
+registry-contract/nodeos.log
+registry-contract/build/registry/registry.abi
+registry-contract/build/registry/registry.wasm
+node_modules
+lock-package.json

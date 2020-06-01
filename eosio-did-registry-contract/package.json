@@ -1,0 +1,22 @@
+{
+  "name": "eosio-did-registry-contract",
+  "version": "0.0.1",
+  "description": "DID Registar for \"eosio\" DIDs. The purpose of this build is to expose a class, which gives the possibility to an eosio account owner to register or to update his DID",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stan14100/eosio-did-method.git"
+  },
+  "author": "Stavros Antoniadis",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.0.5",
+    "detect-node": "^2.0.4",
+    "eosjs": "^20.0.3",
+    "node-fetch": "^2.6.0"
+  }
+}

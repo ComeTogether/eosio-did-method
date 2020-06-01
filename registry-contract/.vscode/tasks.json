@@ -1,0 +1,32 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "eosio-cpp -abigen -I contracts/registry/include -R resource -contract registry -o build/registry/registry.wasm ./contracts/registry/src/registry.cpp ",
+            "type": "shell",
+            "group": "build",
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "Start nodeos",
+            "type": "shell",
+            "command": "nodeos -e -p eosio --plugin eosio::producer_plugin --disable-replay-opts --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::http_plugin --plugin eosio::history_api_plugin --filter-on=* --access-control-allow-origin='*' --contracts-console --http-validate-host=false --verbose-http-errors >> nodeos.log 2>&1",
+            "problemMatcher": []
+        },
+        {
+            "label": "Stop nodeos",
+            "type": "shell",
+            "command": "pkill nodeos",
+            "problemMatcher": []
+        },
+        {
+            "label": "Reset nodeos",
+            "type": "shell",
+            "command": "nodeos -e -p eosio --plugin eosio::producer_plugin --disable-replay-opts --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::http_plugin --plugin eosio::history_api_plugin --delete-all-blocks --filter-on=* --access-control-allow-origin='*' --contracts-console --http-validate-host=false --verbose-http-errors >> nodeos.log 2>&1",
+            "problemMatcher": []
+        }
+    ]
+}

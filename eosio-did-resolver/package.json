@@ -1,0 +1,32 @@
+{
+  "name": "eosio-did-resolver",
+  "version": "0.0.0",
+  "description": "DID Resolver for \"eosio\" DIDs. The purpose of this build is to integrate \"eosio\" DID method into DIF DID-Resolver.",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stan14100/eosio-did-method.git"
+  },
+  "keywords": [
+    "DIDs",
+    "EOSIO",
+    "SSI",
+    "VCs"
+  ],
+  "author": "Stavros Antoniadis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stan14100/eosio-did-method/issues"
+  },
+  "homepage": "https://github.com/stan14100/eosio-did-method#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "did-resolver": "^1.1.0",
+    "eosio-did-registry-contract": "0.0.0",
+    "typescript": "^3.9.3"
+  }
+}

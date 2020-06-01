@@ -1,0 +1,21 @@
+{
+  "main": "contracts/registry/src/registry.cpp",
+  "contract": "registry",
+  "include": "contracts/registry/include",
+  "resource": "",
+  "cdt": "cmd",
+  "output": "",
+  "scripts": {
+    "build": ""
+  },
+  "deploy": {
+    "target": "both",
+    "mainnet": "",
+    "kylin": "",
+    "jungle": "",
+    "local": ""
+  },
+  "test": {
+    "npmClient": ""
+  }
+}

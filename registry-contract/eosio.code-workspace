@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"string": "cpp",
+			"*.tcc": "cpp",
+			"unordered_map": "cpp",
+			"string_view": "cpp",
+			"deque": "cpp",
+			"vector": "cpp",
+			"optional": "cpp"
+		}
+	}
+}

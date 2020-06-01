@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    "outDir": "js",
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "js",
+    "tests",
+    "node_modules"
+  ]
+}
